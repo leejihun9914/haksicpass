@@ -19,6 +19,7 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.viewpager.widget.ViewPager
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -54,6 +55,7 @@ class HomeActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     var ptime: LocalDate = LocalDate.now()
     lateinit var customBarcodeDialog : BarcodeDialog
+    internal lateinit var  viewpager : ViewPager
 
     private lateinit var drawerLayout : DrawerLayout
     private lateinit var drawerView : View
@@ -231,6 +233,9 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, MyPageActivity::class.java)
             startActivity(intent)
         }
+        viewpager = findViewById<ViewPager>(R.id.viewPager)
+        val adapter = ViewPagerAdapter(this)
+        viewpager.adapter = adapter
 
         //로그아웃 버튼
         btn_logout.setOnClickListener {
@@ -248,15 +253,15 @@ class HomeActivity : AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("로그아웃")
         builder.setMessage("정말로 로그아웃 하시겠습니까?")
-        builder.setPositiveButton(Html.fromHtml("<font color='#FF7F27'>예</font>"), DialogInterface.OnClickListener { dialog, which ->
+        builder.setPositiveButton(Html.fromHtml("<font color='#FF7F27'>예</font>")) { _, _ ->
             startActivity(intent)
             auth.signOut()
             finish()
             Toast.makeText(this, "정상적으로 로그아웃 되었습니다.", Toast.LENGTH_SHORT).show()
-        })
-        builder.setNegativeButton("아니오", DialogInterface.OnClickListener { _, _ ->
+        }
+        builder.setNegativeButton("아니오") { _, _ ->
 
-        })
+        }
         builder.show()
     }
     
