@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#283FBD"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/edittext_rounded_corner_rectangle"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                app:srcCompat="@drawable/nbarcode" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="VERSION 1.0" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/tagpreview" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:background="#00FFFFFF"
+                app:srcCompat="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_id"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:editable="false"
+                    android:ems="10"
+                    android:hint="E-MAIL"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:hint="PASSWORD"
+                    android:inputType="textPassword"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_login_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="  "
+                    android:textColor="#FF0000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_face_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/ic_baseline_portrait_24" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="188dp"
+                    android:layout_height="50dp"
+                    android:background="#B4000000"
+                    android:text="로그인"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            android:background="#00FFFFFF"
+            android:clickable="false"
+            android:text=" 계정이 없으신가요?"
+            android:textColor="#FFFFFF" />
+
+        <View
+            android:layout_width="300px"
+            android:layout_height="1px"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

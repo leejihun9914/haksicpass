@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "639723373505",
+    "firebase_url": "https://hasicpassandroid.firebaseio.com",
+    "project_id": "hasicpassandroid",
+    "storage_bucket": "hasicpassandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:639723373505:android:848c635e0d4c7ec586a540",
+        "android_client_info": {
+          "package_name": "com.ljh.hasicpass_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "639723373505-1qdp4nngaru760nqqbcr99enm3ra3754.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ljh.hasicpass_android",
+            "certificate_hash": "e5ba6cacfdbe0835868bf7e9dcae92f5c06bbc1f"
+          }
+        },
+        {
+          "client_id": "639723373505-jhm7p8e2umek9dq32i7neo06p5ju5euc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO9xEI5ahuuRRHPKOjMmsYZguSxJnMvkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "639723373505-jhm7p8e2umek9dq32i7neo06p5ju5euc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

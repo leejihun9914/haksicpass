@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abril_fatface</item>
+        <item>@font/aldrich</item>
+        <item>@font/archivo_black</item>
+        <item>@font/bangers</item>
+        <item>@font/racing_sans_one</item>
+        <item>@font/rammetto_one</item>
+        <item>@font/suez_one</item>
+        <item>@font/unlock</item>
+        <item>@font/zeyada</item>
+    </array>
+</resources>

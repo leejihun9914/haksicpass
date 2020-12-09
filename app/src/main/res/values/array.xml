@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="전공">
+        <item>전공을 선택해주세요</item>
+        <item>컴퓨터정보과</item>
+        <item>스마트금형과</item>
+        <item>기계시스템과</item>
+        <item>산업설비자동화과</item>
+        <item>자동차과</item>
+        <item>메카트로닉스과</item>
+        <item>정보통신과</item>
+    </string-array>
+
+    <string-array name="이메일">
+        <item>naver.com</item>
+        <item>daum.net</item>
+        <item>gmail.com</item>
+    </string-array>
+</resources>

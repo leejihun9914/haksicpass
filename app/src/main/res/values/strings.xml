@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">학식패스</string>
+    <string name="id">학번</string>
+    <string name="password">비밀번호</string>
+
+    <string name="tel_check_complete">휴대폰 인증 완료</string>
+    <string name="face_check_complete">얼굴정보 등록 완료</string>
+</resources>
